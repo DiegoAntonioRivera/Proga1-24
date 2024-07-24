@@ -10,17 +10,16 @@ namespace miPrimerProyecto
     {
         static void Main(string[] args)
         {
-            //ejercicio de suma de dos numeros introducidos por el usuario.
-            Console.Write("num1: ");
-            double num1 = double.Parse(Console.ReadLine()); //"s" -> s
-
-            Console.Write("num2: ");
-            double num2 = double.Parse(Console.ReadLine());
-
-            double respuesta = num1 + num2;
-            Console.WriteLine("la suma de {0}+{1}={2}", num1, num2, respuesta);
-
-            //Pausa
+            //prioridad de los operadores aritmeticos.
+            //ejercicioobtener la el promedio de una serie de numeros
+            int[] serie = new int[] { 5, 4, 6, 8, 9, }; //32
+            int suma = 0;
+            foreach (int num in serie)
+            {
+                suma = suma + num;
+            }
+                Console.WriteLine("la suma es: {0}, el promedio {1}", suma, suma/serie.Length);
+            //pausa.
             Console.ReadLine();
         }
     }
